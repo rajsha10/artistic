@@ -1,0 +1,39 @@
+/* imports fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Lobster&family=Plaster&display=swap');
+/* fonts  */
+
+.lobster-regular {
+  font-family: "Lobster", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fredericka-the-great-regular {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 550;
+  font-style: normal;
+}
+
+.plaster-regular {
+  font-family: "Plaster", serif;
+  font-weight: 400;
+  font-style: normal;
+  background: url(/hero/7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* extra */
+
+.nav-back {
+  background: url(/snow_background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+ }

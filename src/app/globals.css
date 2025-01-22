@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --background: #ffffff;
   --foreground: #000000;
@@ -18,4 +19,53 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-main-container{
+  position: relative;
+  overflow: hidden;
+}
+
+.snow, .snow::before, .snow::after{
+  content: "";
+  position: absolute;
+  top: -500px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+  radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+  radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+  radial-gradient(3px 3px at 300px 250px, #fff, transparent),
+  radial-gradient(4px 4px at 400px 350px, #fff, transparent),
+  radial-gradient(6px 6px at 500px 100px, #fff, transparent),
+  radial-gradient(3px 3px at 50px 200px, #fff, transparent),
+  radial-gradient(4px 4px at 150px 300px, #fff, transparent),
+  radial-gradient(6px 6px at 250px 400px, #fff, transparent),
+  radial-gradient(3px 3px at 350px 500px, #fff, transparent);
+
+  background-size: 650px 650px;
+  animation: snowAmin 3s linear;
+  animation-iteration-count: infinite;
+}
+
+.snow::after{
+  margin-left: -250px;
+  opacity: 0.5;
+  filter: blur(2px);
+}
+
+.snow::before{
+  margin-left: -350px;
+  opacity: 0.7;
+  filter: blur(1px);
+}
+
+@keyframes snowAmin {
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(650px);
+  }
 }
